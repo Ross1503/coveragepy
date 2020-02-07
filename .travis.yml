@@ -8,8 +8,7 @@ dist: xenial
 language: python
 
 cache: pip
-arch:
-  - amd64
+
 python:
   - '2.7'
   - '3.5'
@@ -25,7 +24,6 @@ matrix:
       python: 3.8
       env: 
         COVERAGE_COVERAGE=yes
-        COVERAGE_COVERAGE=no
            
 env:
   matrix:
