@@ -23,8 +23,9 @@ matrix:
   include:
     - arch: arm64
       python: 3.8
-      env: COVERAGE_COVERAGE=yes
-           COVERAGE_COVERAGE=no
+      env: 
+        COVERAGE_COVERAGE=yes
+        COVERAGE_COVERAGE=no
            
 env:
   matrix:
