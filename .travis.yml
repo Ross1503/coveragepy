@@ -15,17 +15,17 @@ python:
   - '3.6'
   - '3.7'
   - '3.8'
-  - 'pypy2.7-6.0'
-  - 'pypy3.5-6.0'
+  
+arch: 
+  - amd64
+  - arm64
 
 matrix:
   include:
-    - arch: arm64
-      python: 3.8
-      env: 
-        - COVERAGE_COVERAGE=yes
-        - COVERAGE_COVERAGE=no
-   
+    - python: 2.7
+    - python: pypy2.7-6.0
+    - python: pypy3.5-6.0
+
 env:
   matrix:
     - COVERAGE_COVERAGE=no
