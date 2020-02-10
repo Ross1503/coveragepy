@@ -35,7 +35,6 @@ install:
   - pip freeze
 script:
   - tox
-
 after_script:
   - |
     if [[ $COVERAGE_COVERAGE == 'yes' ]]; then
